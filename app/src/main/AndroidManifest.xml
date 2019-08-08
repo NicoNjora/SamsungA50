@@ -18,7 +18,7 @@
         </activity>
         <meta-data
             android:name="com.hover.ApiKey"
-            android:value="YOUR_API_TOKEN"/>
+            android:value="b8dedfdadae115fca3846f46ea690e35"/>
     </application>
 
 </manifest>
