@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SamsungA50</string>
+    <string name="low_storage_error">Low Storage Available</string>
+    <string name="txt_message">Hello OCR test</string>
 </resources>
