@@ -18,10 +18,16 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+    roomVersion = '2.1.0'
+    archLifecycleVersion = '2.0.0'
 }
