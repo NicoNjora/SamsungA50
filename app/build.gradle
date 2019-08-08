@@ -41,4 +41,7 @@ dependencies {
     // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+
+    // Google Vision OCR API
+    implementation 'com.google.android.gms:play-services-vision:15.0.0'
 }
