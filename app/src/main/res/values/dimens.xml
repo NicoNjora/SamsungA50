@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_ussd_view_width">82dp</dimen>
+    <dimen name="form_title_size">20sp</dimen>
+    <dimen name="form_text_view_size">15sp</dimen>
+</resources>

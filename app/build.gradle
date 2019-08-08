@@ -44,5 +44,9 @@ dependencies {
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
 
     // Hover
-    implementation('com.hover:android-sdk:1.2.3') { transitive = true}
+    implementation('com.hover:android-sdk:1.2.3') { transitive = true }
+
+    // butter knife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
