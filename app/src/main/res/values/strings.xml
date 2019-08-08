@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SamsungA50</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="company">Company</string>
+    <string name="enter_company">Enter Company</string>
+    <string name="purpose">Purpose</string>
+    <string name="enter_purpose_of_ussd">Enter purpose of USSD</string>
+    <string name="ussd_code">USSD CODE</string>
+    <string name="enter_ussd_code">Enter USSD code</string>
+    <string name="save_ussd">Save USSD</string>
+    <string name="add_ussd">Add USSD</string>
 </resources>
