@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nicolletnjora.samsunga50">
+
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
@@ -20,6 +21,9 @@
         <meta-data
             android:name="com.hover.ApiKey"
             android:value="b8dedfdadae115fca3846f46ea690e35"/>
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.vision.DEPENDENCIES"-->
+            <!--android:value="ocr"/>-->
     </application>
 
 </manifest>
