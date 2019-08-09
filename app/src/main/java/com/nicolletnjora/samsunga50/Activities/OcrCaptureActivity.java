@@ -52,8 +52,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     // Permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
 
-    // Captured Text
-    private String imageText;
+    public static final String EXTRA_MESSAGE = "com.nicolletnjora.samsunga50.Activities";
+
 
     // Constants used to pass extra data in the intent
     public static final String AutoFocus = "AutoFocus";
@@ -123,10 +123,17 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                imageText = ocrDetectorProcessor.get_captured_text();
-                Toast.makeText(OcrCaptureActivity.this, "Captured Text:\t"+ocrDetectorProcessor.get_captured_text(), Toast.LENGTH_LONG).show();
+                captureText(v);
             }
         });
+    }
+
+    public void captureText(View view) {
+        String scanned_no = ocrDetectorProcessor.get_captured_text();
+        Toast.makeText(OcrCaptureActivity.this, "Captured Text:\t" + scanned_no, Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("EXTRA_MESSAGE", scanned_no);
+        startActivity(intent);
     }
 
 

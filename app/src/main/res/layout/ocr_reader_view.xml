@@ -37,7 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-47dp"
-        android:text="@string/scan_button" />
+        android:text="@string/scan_button"
+        android:onClick="captureText"/>
 
 
 </LinearLayout>
