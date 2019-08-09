@@ -1,6 +1,7 @@
 package com.nicolletnjora.samsunga50.Models;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity
@@ -12,13 +13,13 @@ public class UssdCode {
     private String serviceProvider;
     private String serviceType;
 
-    public UssdCode(int id, String ussdCodePath, String ussdCodePathDescription, String serviceProvider, String serviceType) {
-        this.id = id;
-        this.ussdCodePath = ussdCodePath;
-        this.ussdCodePathDescription = ussdCodePathDescription;
-        this.serviceProvider = serviceProvider;
-        this.serviceType = serviceType;
-    }
+//    public UssdCode(int id, String ussdCodePath, String ussdCodePathDescription, String serviceProvider, String serviceType) {
+//        this.id = id;
+//        this.ussdCodePath = ussdCodePath;
+//        this.ussdCodePathDescription = ussdCodePathDescription;
+//        this.serviceProvider = serviceProvider;
+//        this.serviceType = serviceType;
+//    }
 
     public int getId() {
         return id;

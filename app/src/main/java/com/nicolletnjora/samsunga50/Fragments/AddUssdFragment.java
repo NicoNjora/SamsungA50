@@ -13,9 +13,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+import com.nicolletnjora.samsunga50.Database.UssdCodesDatabase;
+import com.nicolletnjora.samsunga50.Models.UssdCode;
 import com.nicolletnjora.samsunga50.R;
 
-public class AddUssd extends Fragment {
+
+public class AddUssdFragment extends Fragment {
 
     @BindView(R.id.et_company)
     EditText editTextCompany;
@@ -28,7 +31,10 @@ public class AddUssd extends Fragment {
 
     private Unbinder unbinder;
 
-    public AddUssd() {
+    private UssdCodesDatabase db;
+
+
+    public AddUssdFragment() {
         // Required empty public constructor
     }
 
@@ -49,10 +55,11 @@ public class AddUssd extends Fragment {
             }
         });
 
+
+        db = UssdCodesDatabase.getDatabaseInstance(getContext());
         return view;
     }
 
-     
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -85,5 +92,19 @@ public class AddUssd extends Fragment {
             return;
         }
 
+        // Auto increment id
+        UssdCode UssdCode = new UssdCode();
+        UssdCode.setServiceProvider(company);
+        UssdCode.setServiceType(purpose);
+        UssdCode.setUssdCodePathDescription(company+ " " +purpose);
+        UssdCode.setUssdCodePath(ussdCode);
+
+        addUssdCode(UssdCode);
+    }
+
+    private UssdCode addUssdCode(UssdCode UssdCode) {
+
+        db.UssdCodeDao().saveUssdCode(UssdCode);
+        return UssdCode;
     }
 }

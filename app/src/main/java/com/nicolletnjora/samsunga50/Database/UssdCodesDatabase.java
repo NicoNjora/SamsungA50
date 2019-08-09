@@ -16,7 +16,7 @@ import com.nicolletnjora.samsunga50.Models.UssdCode;
 public abstract class UssdCodesDatabase extends RoomDatabase {
 
     private static UssdCodesDatabase INSTANCE;
-    public abstract UssdCodeDao ussdCodeDao();
+    public abstract UssdCodeDao UssdCodeDao();
     private static final Object syncLockObject = new Object();
 
     public static UssdCodesDatabase getDatabaseInstance(Context context){
