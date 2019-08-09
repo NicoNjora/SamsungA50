@@ -131,9 +131,9 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     public void captureText(View view) {
         String scanned_no = ocrDetectorProcessor.get_captured_text();
         Toast.makeText(OcrCaptureActivity.this, "Captured Text:\t" + scanned_no, Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("EXTRA_MESSAGE", scanned_no);
-        startActivity(intent);
+//        Intent intent = new Intent(this, MainActivity.class);
+//        intent.putExtra("EXTRA_MESSAGE", scanned_no);
+//        startActivity(intent);
     }
 
 
