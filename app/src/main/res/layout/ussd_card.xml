@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ussd_card_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ussdCodePathDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="path description"/>
+
+            <TextView
+                android:id="@+id/ussdCodePath"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/ussdCodePathDescription"
+                android:text="144"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

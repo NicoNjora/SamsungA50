@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Fragments.AddUssdFragment"
+    android:background="@color/hsdk_almost_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_ussd"
+            android:textStyle="bold"
+            android:textSize="@dimen/form_title_size"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/add_ussd_view_width"
+                android:layout_height="match_parent"
+                android:text="@string/company"
+                android:textSize="@dimen/form_text_view_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_company"
+                android:id="@+id/et_company"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/add_ussd_view_width"
+                android:layout_height="match_parent"
+                android:text="@string/purpose"
+                android:textSize="@dimen/form_text_view_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_purpose_of_ussd"
+                android:id="@+id/et_purpose_ussd"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/add_ussd_view_width"
+                android:layout_height="match_parent"
+                android:text="@string/ussd_code"
+                android:textSize="@dimen/form_text_view_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_ussd_code"
+                android:id="@+id/et_ussd_code"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_ussd"
+            android:id="@+id/btn_save_ussd"/>
+
+    </LinearLayout>
+
+</FrameLayout>
