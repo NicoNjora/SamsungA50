@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private UssdCodesDatabase db;
     private List<UssdCode> ussdCodeList;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 

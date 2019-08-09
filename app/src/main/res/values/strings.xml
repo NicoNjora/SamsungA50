@@ -11,4 +11,10 @@
     <string name="enter_ussd_code">Enter USSD code</string>
     <string name="save_ussd">Save USSD</string>
     <string name="add_ussd">Add USSD</string>
+    <string name="low_storage_error">Low Storage Available</string>
+    <string name="txt_message">Hello OCR test</string>
+    <string name="scan_button">CAPTURE</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
 </resources>
