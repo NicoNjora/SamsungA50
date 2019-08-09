@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.OcrCaptureActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
         <meta-data
             android:name="com.hover.ApiKey"
             android:value="b8dedfdadae115fca3846f46ea690e35"/>
-        <activity android:name=".Activities.MainActivity"/>
+        <activity android:name=".Activities.OcrCaptureActivity"/>
         <!--<meta-data-->
             <!--android:name="com.google.android.gms.vision.DEPENDENCIES"-->
             <!--android:value="ocr"/>-->

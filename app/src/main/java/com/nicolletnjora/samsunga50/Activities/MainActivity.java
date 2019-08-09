@@ -24,10 +24,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
     @BindView(R.id.fab_ussd)
     FloatingActionButton fab;
@@ -39,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private UssdCodesDatabase db;
     private List<UssdCode> ussdCodeList;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
