@@ -49,5 +49,6 @@ dependencies {
 
     // Google Vision OCR
     implementation 'com.google.android.gms:play-services-vision:18.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 //    implementation 'com.google.apis:google-api-services-vision:v1-rev357-1.22.0'
 }

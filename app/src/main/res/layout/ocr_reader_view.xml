@@ -5,28 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="5"
-    tools:context=".Activities.OcrCaptureActivity">
+    tools:context=".Activities.OcrCaptureActivity"
+    android:keepScreenOn="true">
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
+    <com.nicolletnjora.samsunga50.Activities.CameraSourcePreview
+        android:id="@+id/preview"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4" />
+        android:layout_height="wrap_content">
+
+        <com.nicolletnjora.samsunga50.Activities.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="@string/txt_message"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="20sp" />-->
+
+    </com.nicolletnjora.samsunga50.Activities.CameraSourcePreview>
+
     <Button
         android:id="@+id/scanBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/scan_button"/>
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:text="@string/txt_message"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:layout_marginTop="-47dp"
+        android:text="@string/scan_button" />
+
 
 </LinearLayout>
