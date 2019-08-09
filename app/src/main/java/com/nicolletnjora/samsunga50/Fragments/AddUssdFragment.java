@@ -1,5 +1,6 @@
 package com.nicolletnjora.samsunga50.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+import com.nicolletnjora.samsunga50.Activities.MainActivity;
 import com.nicolletnjora.samsunga50.Database.UssdCodesDatabase;
 import com.nicolletnjora.samsunga50.Models.UssdCode;
 import com.nicolletnjora.samsunga50.R;
@@ -100,6 +102,8 @@ public class AddUssdFragment extends Fragment {
         UssdCode.setUssdCodePath(ussdCode);
 
         addUssdCode(UssdCode);
+
+        startActivity(new Intent(getContext(), MainActivity.class));
     }
 
     private UssdCode addUssdCode(UssdCode UssdCode) {
